@@ -1,0 +1,70 @@
+.cui-view {
+  display: flex;
+  flex-direction: column;
+  width: 393px;
+  height: 852px;
+  margin: 64px auto;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.100);
+  border-radius: 6px;
+}
+
+.cui-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cui-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 24px;
+  color: white;
+}
+
+.cui-message {
+  padding: 10px;
+  border-radius: 15px;
+  max-width: 60%;
+}
+
+.cui-message.user {
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+.cui-message.ai {
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+
+form textarea {
+  border-radius: 6px;
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.089);
+  color: white;
+  resize: vertical; /* Allow vertical resizing */
+  height: 20px; /* Set an initial height */
+  font-size: 18px;
+}
+
+form input {
+  border-radius: 6px;
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.089);
+  color: white;
+  resize: vertical; /* Allow vertical resizing */
+  height: 20px; /* Set an initial height */
+  font-size: 18px;
+}
